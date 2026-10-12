@@ -23,6 +23,7 @@ import {
 
 import HomeTab from './components/HomeTab';
 import RelaysTab from './components/RelaysTab';
+import voltLogo from './assets/volt_icon.svg';
 import AnalyticsTab from './components/AnalyticsTab';
 import AlertsTab from './components/AlertsTab';
 import AuthModal from './components/AuthModal';
@@ -350,7 +351,7 @@ export default function App() {
       <div className="auth-page-container">
         <div style={{ textAlign: 'center' }}>
           <div className="volt-brand-icon" style={{ width: '64px', height: '64px', margin: '0 auto 16px' }}>
-            <img src="/volt_icon.svg" alt="Volt Logo" />
+            <img src={voltLogo} alt="Volt Logo" />
           </div>
           <div style={{ color: 'var(--volt-teal)', fontSize: '18px', fontWeight: 600 }}>
             Initializing Volt Smart Energy...
@@ -380,7 +381,7 @@ export default function App() {
       <aside className="volt-sidebar">
         <div className="volt-brand" onClick={() => setActiveTab('home')}>
           <div className="volt-brand-icon">
-            <img src="/volt_icon.svg" alt="Volt" />
+            <img src={voltLogo} alt="Volt" />
           </div>
           <div>
             <div className="volt-brand-title">VOLT</div>

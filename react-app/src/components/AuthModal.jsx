@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { registerUser, loginUser, resetPassword } from '../firebase';
 import { BoltIcon } from './Icons';
+import voltLogo from '../assets/volt_icon.svg';
 
 export default function AuthModal({ isOpen, onClose, onAuthSuccess }) {
   const [tab, setTab] = useState('login'); // 'login' | 'register' | 'forgot'
@@ -86,7 +87,7 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }) {
       <div className="auth-card">
         <div className="auth-header">
           <div className="volt-brand-icon auth-logo">
-            <img src="/volt_icon.svg" alt="Volt Logo" />
+            <img src={voltLogo} alt="Volt Logo" />
           </div>
           <h1 className="auth-title">VOLT</h1>
           <p className="auth-subtitle">
